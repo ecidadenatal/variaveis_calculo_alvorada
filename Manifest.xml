@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<manifest>
+  <name>Variaveis Calculo Alvorada</name>
+  <id id="VariaveisCalculoAlvorada"> </id>
+  <plugin name="variaveis_calculo_alvorada" label="Variáveis Calculo Alvorada" plugin-version="1.2" ecidade-version="2.3.36" id-modulo="1">
+    <files>
+      <file name="pes4_gerafolha_fxx.php"          path="/pes4_gerafolha_fxx.php" />
+      <file name="pes4_gerafolha_fxx_valores.php"  path="/pes4_gerafolha_fxx_valores.php" />
+      <file name="VariaveisCalculoAlvorada.xml"    path="/modification/xml/VariaveisCalculoAlvorada.xml" />
+    </files>
+  </plugin>
+</manifest>

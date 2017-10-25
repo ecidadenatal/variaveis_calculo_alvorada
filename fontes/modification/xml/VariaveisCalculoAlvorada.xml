@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+  <name>VariaveisCalculoAlvorada</name>
+  <id>VariaveisCalculoAlvorada</id>
+  <file path="pes4_gerafolha004.php">
+    
+    <operation>
+      <search><![CDATA[function carrega_fxxx($codigo, $carrega, $cfuncao=null ){]]></search>
+      <add position="after"><![CDATA[    
+       require("pes4_gerafolha_fxx_valores.php"); 
+        ]]></add>
+    </operation>
+
+    <operation>
+      <search><![CDATA[global $F001]]></search>
+      <add position="before"><![CDATA[    
+       require("pes4_gerafolha_fxx.php"); 
+        ]]></add>
+    </operation>
+
+
+  </file>
+
+  <file path="pes4_gerafolha002.php">
+    <operation>
+      <search><![CDATA["pes4_gerafolha004.php"]]></search>
+      <add position="replace"><![CDATA[Modification::getFile("pes4_gerafolha004.php")]]></add>
+    </operation>
+  </file>
+</modification>
